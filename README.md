@@ -20,7 +20,7 @@ npm install
 npx cypress open    
 npx cypress run --browser chrome --headed
 
-## CI / Paralelo
+## CI / Parallel
 npm run ci
 
 ## Cypress dashboard run
@@ -30,7 +30,7 @@ npm run ci
 3.- Paste the projectId in cypress.config.ts:
 export default defineConfig({
   projectId: 'abc123',   // ← tu id
-  /* resto de la config */
+  
 });
 
 4.- Record Key obtained in Project Settings › Record Keys
