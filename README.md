@@ -1,7 +1,7 @@
 # Automatización E-commerce - Cypress
 
-> **Autor:** Diego Arquieta  
-> **Contexto:** This repository was created as a part of a test requested by **Alejandra de KMS**.
+> **Author:** Diego Arquieta  
+> **Context:** This repository was created as a part of a test requested by **Alejandra de KMS**.
 
 Automated test suite for a fictional e-commerce web application covering:
 
