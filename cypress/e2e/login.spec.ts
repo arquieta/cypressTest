@@ -1,0 +1,21 @@
+import { LoginPage } from '../pages/login.page';
+
+describe('Login', () => {
+  const page = new LoginPage();
+
+  before(function () {
+    cy.fixture('users').then(d => { this.users = d; });
+  });
+
+  it('credenciales válidas', function () {
+    const { emailPrefix, domain, password } = this.users.valid;
+    page.login(`${emailPrefix}seed${domain}`, password);   // usa una cuenta semilla ya creada
+    cy.url().should('include', '/account');
+  });
+
+  it('credenciales inválidas', function () {
+    const { email, password } = this.users.invalid;
+    page.login(email, password);
+    page.assertError('Invalid');
+  });
+});

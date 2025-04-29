@@ -1,0 +1,13 @@
+{
+  "valid": {
+    "firstName": "Diego",
+    "lastName": "Arquieta",
+    "emailPrefix": "diego+",
+    "domain": "@mailinator.com",
+    "password": "Str0ng!Pass123"
+  },
+  "invalid": {
+    "email": "wrong@mailinator.com",
+    "password": "badPass"
+  }
+}

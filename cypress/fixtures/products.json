@@ -1,0 +1,6 @@
+{
+    "byName":   { "term": "Wireless Mouse", "expected": "Wireless Mouse" },
+    "byCat":    { "category": "Electronics", "expected": "Electronics" },
+    "cartItem": { "sku": "WM-001", "name": "Wireless Mouse", "price": 29.99 }
+  }
+  

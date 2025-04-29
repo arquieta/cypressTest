@@ -1,0 +1,15 @@
+{
+    "card": {
+      "number": "4111111111111111",
+      "expiry": "12/30",
+      "cvv": "123"
+    },
+    "address": {
+      "first":   "Diego",
+      "last":    "Arquieta",
+      "address": "Calle 123",
+      "city":    "Monterrey",
+      "zip":     "64000"
+    }
+  }
+  

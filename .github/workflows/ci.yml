@@ -1,0 +1,28 @@
+# .github/workflows/ci.yml
+name: e2e
+
+on:
+  push:
+    branches: [main]          # ajusta si tu rama principal se llama distinto
+  pull_request:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: [1, 2]    
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          record: true
+          record-key: ${{ secrets.CYPRESS_RECORD_KEY }}   
+          parallel: true
+          group: 'CI'
+          ci-build-id: ${{ github.run_id }}               
