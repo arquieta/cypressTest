@@ -8,12 +8,12 @@ describe('Product Search', () => {
     cy.fixture('products').then(p => { this.prod = p; });
   });
 
-  it('busca por nombre', function () {
+  it('Sarch by name', function () {
     new SearchByName().search(this.prod.byName.term);
     page.resultsShouldContain(this.prod.byName.expected);
   });
 
-  it('busca por categoría', function () {
+  it('Search by category', function () {
     new SearchByCategory().search(this.prod.byCat.category);
     page.resultsShouldContain(this.prod.byCat.expected);
   });

@@ -7,13 +7,13 @@ describe('Login', () => {
     cy.fixture('users').then(d => { this.users = d; });
   });
 
-  it('credenciales válidas', function () {
+  it('Valid credentials', function () {
     const { emailPrefix, domain, password } = this.users.valid;
-    page.login(`${emailPrefix}seed${domain}`, password);   // usa una cuenta semilla ya creada
+    page.login(`${emailPrefix}seed${domain}`, password);  
     cy.url().should('include', '/account');
   });
 
-  it('credenciales inválidas', function () {
+  it('Invalid credentials', function () {
     const { email, password } = this.users.invalid;
     page.login(email, password);
     page.assertError('Invalid');

@@ -10,8 +10,8 @@ describe('Checkout', () => {
     cy.fixture('payment').then(p => { this.pay = p; });
   });
 
-  it('completa el flujo de compra', function () {
-    // (asume que el carrito ya tiene items)
+  it('Payment workflow', function () {
+    
     cart.open();
     cart.proceedToCheckout();
 

@@ -7,7 +7,7 @@ describe('User Registration', () => {
     cy.fixture('users').then(data => { this.users = data; });
   });
 
-  it('registro con datos válidos', function () {
+  it('Valid data registration', function () {
     const u = this.users.valid;
     const email = `${u.emailPrefix}${Date.now()}${u.domain}`;
 

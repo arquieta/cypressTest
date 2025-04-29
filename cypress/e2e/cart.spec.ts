@@ -1,14 +1,14 @@
 import { CartPage } from '../pages/cart.page';
 
-describe('Agregar al carrito', () => {
+describe('Add to cart', () => {
   const cart = new CartPage();
 
   before(function () {
     cy.fixture('products').then(p => { this.prod = p.cartItem; });
   });
 
-  it('añade producto y verifica contenido', function () {
-    // (omitir navegación al detalle del producto)
+  it('aAdd product and validate content', function () {
+    
     cy.contains(this.prod.name).parents('[data-testid="product-card"]')
       .find('[data-testid="add-to-cart"]').click();
 

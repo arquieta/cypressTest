@@ -1,4 +1,3 @@
-// checkout.page.ts
 import { BasePage } from './base.page';
 
 export class CheckoutPage extends BasePage {

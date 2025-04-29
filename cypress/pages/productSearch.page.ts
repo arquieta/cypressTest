@@ -1,4 +1,3 @@
-// productSearch.page.ts
 import { BasePage } from './base.page';
 
 export class ProductSearchPage extends BasePage {
